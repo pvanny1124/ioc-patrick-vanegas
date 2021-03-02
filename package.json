@@ -1,0 +1,42 @@
+{
+  "name": "ioc-patrick-vanegas",
+  "version": "1.0.1",
+  "description": "An ioc library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "tsc --declaration && cd dist && node index.js",
+    "test": "mocha -r ts-node/register __tests__/**/*.spec.ts",
+    "test-coverage": "nyc --reporter=text mocha -r ts-node/register __tests__/**/*.spec.ts",
+    "dev": "docker-compose -f docker-compose-dev.yml up",
+    "dev:build": "docker-compose -f docker-compose-dev.yml up --build"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "index.ts",
+      "src"
+    ],
+    "exec": "npm start",
+    "ext": "ts"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.31",
+    "chai": "^4.3.0",
+    "nyc": "^15.1.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.3.0",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.2.2"
+  }
+}
