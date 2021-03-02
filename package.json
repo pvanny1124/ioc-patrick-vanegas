@@ -1,6 +1,6 @@
 {
   "name": "ioc-patrick-vanegas",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An ioc library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

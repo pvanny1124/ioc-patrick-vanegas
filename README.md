@@ -137,3 +137,15 @@ Resources used:
 2. https://www.tutorialsteacher.com/ioc
 3. https://medium.com/jspoint/introduction-to-reflect-metadata-package-and-its-ecmascript-proposal-8798405d7d88
 4. https://github.com/eliasdarruda/ts-di-container
+
+## Development setup
+
+Use
+```
+npm run dev:build
+```
+Or 
+
+```
+npm run dev
+```
