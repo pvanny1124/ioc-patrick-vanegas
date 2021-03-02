@@ -125,9 +125,10 @@ subject.some.printf();
 container.dispose();
 ```
 
-TODO: optimize dispose method and remove metadata
-TODO: add support for injecting instance fields
-TODO: add support for multiple mappings of the same type
+## TODO: 
+1. optimize dispose method and remove metadata
+2. add support for injecting instance fields
+3. add support for multiple mappings of the same type
 
 
 Resources used:
